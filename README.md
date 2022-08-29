@@ -31,8 +31,7 @@ app.real_call('<function name>', *args, **kwargs)
 
 1. Set `QproGlobalDir` in your environment variable, such as `/home/<user>/.local/QproGlobalDir`
 2. Register this project to global: `Qpro register-global`
-3. Generate Fig completion script: `Qpro gen-fig-script`
-4. Generate zsh completion script: `Qpro gen-zsh-comp`
+3. Generate Zsh & Fig completion script: `Qpro gen-complete`
 
 ## Other Cautions
 
