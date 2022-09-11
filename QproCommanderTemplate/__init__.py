@@ -58,8 +58,8 @@ def requirePackage(pname: str,
                 'type': 'confirm',
                 'name': 'install',
                 'message':
-                f"""QproCommanderTemplate require {pname + (' -> ' + module if module else '')}, confirm to install?
-  QproCommanderTemplate 依赖 {pname + (' -> ' + module if module else '')}, 是否确认安装?""",
+                f"""{name} require {pname + (' -> ' + module if module else '')}, confirm to install?
+  {name} 依赖 {pname + (' -> ' + module if module else '')}, 是否确认安装?""",
                 'default': True
         }):
             with QproDefaultConsole.status(
