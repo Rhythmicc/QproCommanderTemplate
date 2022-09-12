@@ -3,7 +3,7 @@ import json
 from QuickProject import user_root, user_lang, QproDefaultConsole, QproInfoString, _ask
 
 enable_config = False
-config_path = os.path.join(user_root, "QproCommanderTemplate.json")
+config_path = os.path.join(user_root, ".QproCommanderTemplate_config")
 
 questions = {
     'name': {
