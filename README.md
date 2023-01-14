@@ -1,38 +1,21 @@
-# QproCommanderTemplate
+<h1 style="text-align: center"> QproCommanderTemplate </h1>
 
 ## Install
 
-```sh
-pip3 install Qpro -U
-# clone this project
-git clone <your url>
-cd QproCommanderTemplate
-# register as Global Command
-Qpro register-global
+```shell
+pip3 install QproCommanderTemplate -U
 ```
 
 ## Usage
 
-get help: `QproCommanderTemplate --help`
-
-### SubCommands
-
-| Command  | Demo                           | Description        |
-| -------- | ------------------------------ | ------------------ |
-| hello | `QproCommanderTemplate hello <who>` | say hello to \<who> |
-
-### Call registered function
-
-```python
-app.real_call('<function name>', *args, **kwargs)
+```shell
+QproCommanderTemplate --help
 ```
 
-## How to Register as Global Command
+## Developer
 
-1. Set `QproGlobalDir` in your environment variable, such as `/home/<user>/.local/QproGlobalDir`
-2. Register this project to global: `Qpro register-global`
-3. Generate Zsh & Fig completion script: `Qpro gen-complete`
+If you need use global config, just edit `__config__.py`:
 
-## Other Cautions
-
-None
+1. make `enable_config = True`.
+2. edit `questions` list.
+3. using `config` at `main.py`.
