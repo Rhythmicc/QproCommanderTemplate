@@ -1,7 +1,7 @@
 from QuickProject.Commander import Commander
 from . import *
 
-app = Commander(name)
+app = Commander(executable_name)
 
 
 @app.command()

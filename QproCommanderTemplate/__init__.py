@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 name = "QproCommanderTemplate"
+executable_name = "QproCommanderTemplate"
 
 from .__config__ import *
 
