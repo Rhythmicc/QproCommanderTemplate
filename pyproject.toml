@@ -1,0 +1,26 @@
+[project]
+name = "QproCommanderTemplate"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["Qpro"]
+
+[tool.poetry]
+name = "QproCommanderTemplate"
+version = "0.1.0"
+description = "your pypi lib description"
+authors = ["Rhythmicc <rhythmlian.cn@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+qpro = "^0.12.22"
+
+[tool.poetry.scripts]
+QproCommanderTemplate = "QproCommanderTemplate.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
