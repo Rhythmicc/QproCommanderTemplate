@@ -21,6 +21,18 @@ qpro = "^0.12.22"
 [tool.poetry.scripts]
 QproCommanderTemplate = "QproCommanderTemplate.main:main"
 
+[tool.qpro.config]
+build = ""
+entry_point = "QproCommanderTemplate/main.py"
+executable = "python3 -m QproCommanderTemplate.main"
+enable_complete = true
+
+[[tool.qpro.server_targets]]
+user = "lianhaocheng"
+host = "localhost"
+port = 22
+path = "/opt/homebrew/lib/python3.11/site-packages/"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
